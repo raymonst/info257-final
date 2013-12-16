@@ -1,0 +1,121 @@
+/* reset */
+
+html, body, address, blockquote, del, div, h1, h2, h3, h4, h5, h6, hr, ins, noscript, p, pre, dl, dt, dd, li, ol, ul, table, caption, colgroup, col, thead, tfoot, tbody, tr, td, th, form, button, fieldset, legend, label, select, optgroup, option, textarea, a, bdo, br, img, map, area, object, param, q, script, span, sub, sup, abbr, acronym, cite, code, del, dfn, em, ins, kbd, samp, strong, var, b, big, i, small, tt{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline;}
+ol, ul{list-style:none;}
+th{text-align:left;}
+table{border-collapse:collapse;}
+
+
+
+/* global */
+
+html												{height:100%;}
+body 												{color:#444; font-family:'Asap', sans-serif; font-size:1em; height:100%;}
+a:link,
+a:visited										    {color:#6497a6; text-decoration:none;}
+a:hover,
+a:visited:hover									    {color:#6497a6; text-decoration:none;}
+
+table td										    {}
+
+h1												    {color:#444; font-size:2em; font-weight:normal; line-height:1.25; margin:0 0 30px 0;}
+h2												    {color:#444; font-size:1.375em; font-weight:normal; margin:0 0 15px 0;}
+h3												    {color:#444; font-size:1.25em; font-weight:normal; margin:0 0 15px 0;}
+h4												    {}
+h5												    {}
+h6												    {}
+
+p												    {margin:0 0 20px 0;}
+span												{}
+hr													{background: #ddd;
+													background-image: -webkit-gradient(
+														linear,
+														left bottom,
+														right bottom,
+														color-stop(0, rgb(255,255,255)),
+														color-stop(0.1, rgb(235,235,235)),
+														color-stop(0.9, rgb(235,235,235)),
+														color-stop(1, rgb(255,255,255))
+													);
+													background-image: -moz-linear-gradient(
+														left center,
+														rgb(255,255,255) 0%,
+														rgb(235,235,235) 10%,
+														rgb(235,235,235) 90%,
+														rgb(255,255,255) 100%
+													);
+													border:0; clear:both; height:1px; margin:30px 0; width:100%;}
+
+label												{clear:both; display:block; margin:0 0 5px 0;}
+label.label-checkbox								{clear:right; display:inline-block; margin:0 0 10px 5px; vertical-align:top; width:80%;}
+input												{font-family:'Asap', sans-serif; font-size:.875em; margin:0 0 5px 0;}
+input[type=text]									{border:1px solid #ccc; border-radius:0; color:#444; padding:10px 3%; width:93%; -webkit-appearance:none;}
+input[type=text]:focus								{}
+input[type=checkbox]								{clear:left; display:inline-block; margin:0 0 5px 0;}
+input[type=button]									{background:#333; border:0; border-radius:0; clear:both; color:#fff; cursor:pointer; display:block; font-size:1em; font-weight:normal; letter-spacing:2px; margin:0 0 10px 0; padding:10px 10px 10px 13px; text-transform:uppercase; -webkit-appearance:none;}
+input[type=submit]									{background:#333; border:0; border-radius:0; clear:both; color:#fff; cursor:pointer; display:block; font-size:1.5em; font-weight:normal; letter-spacing:4px; padding:10px 0; width:100%; -webkit-appearance:none;}
+textarea											{border:1px solid #ccc; border-radius:0; height:200px; padding:10px 3%; width:93%; -webkit-appearance:none;}
+
+::selection 										{}
+::-moz-selection 									{}
+
+
+
+/* header */
+
+header												{background:#333; border-bottom:1px solid #666;color:#fff; font-size:1em; font-weight:normal; left:0; letter-spacing:2px; padding:12px 0 0 0; position:fixed; text-transform:uppercase; text-align:center; top:0; width:100%; z-index:3;}
+header span											{color:#a3c6c4; text-shadow: 0 0 3px #000;}
+header a											{color:#fff !important; display:block; margin:0 0 12px 0; text-decoration:none;}
+
+
+
+/* container */
+
+#container											{}
+
+#home												{background: -webkit-linear-gradient(#111, #333); /* For Safari */
+													background: -o-linear-gradient(#111, #333); /* For Opera 11.1 to 12.0 */
+													background: -moz-linear-gradient(#111, #333); /* For Firefox 3.6 to 15 */
+													background: linear-gradient(#111, #333); /* Standard syntax */
+													color:#fff;}
+#home h1											{color:#fff; font-size:2em; font-weight:normal; letter-spacing:5px; margin:0 0 40px 0; text-align:center; text-shadow: 0 0 3px #000; text-transform:uppercase;}
+#home h1 span										{color:#a3c6c4;}
+#home .home-button									{background:#444; border:0; border-radius:0; clear:both; color:#fff; cursor:pointer; display:block; font-size:1em; letter-spacing:0; margin:0 0 20px 0; padding:20px 0; text-align:center; text-decoration:none; width:100%;}
+#home .home-button:hover							{text-decoration:none;}
+#home .home-button img								{margin:0 0 10px 0;}
+
+main												{padding:60px 5% 5% 5%; width:90%;}
+#home main											{padding-top:50px;}
+/* p#username											{background:#666; display:block;font-size:.75em; padding:5px 0 7px 0; margin:0; text-align:center;} */
+p#username											{font-size:.75em; margin:0 0 30px 0; text-align:right;}
+
+.form-options										{display:inline-block; padding:0 5% 0 0; vertical-align:top; width:44%;}
+#loading img										{display:none; margin:40px auto; width:22px;}
+#form-message										{color:#b72d06; margin:20px 0;}
+
+#map-overlay										{background:#000; display:none; height:100%; left:0; position:fixed; width:100%; top:0; z-index:1;}
+#map-close											{display:block; right:5%; position:fixed; top:60px; z-index:100;}
+#map-location										{display:none; height:300px; width:100%;}
+#map												{height:100%; width:100%; z-index:2;}
+.map-modal-title									{text-transform:capitalize;}
+.map-modal-link										{word-break:break-all;}
+
+
+
+/* responsive design css rules */
+
+@media screen and (min-width:480px) and (max-width:1024px) {
+body 												{}
+													}
+
+@media screen and (min-width:1024px) {
+body 												{}
+													}
+
+
+
+/* misc */
+
+strong											    {font-weight:bold;}
+em													{font-style:italic;}
+.cb													{clear:both;}          
